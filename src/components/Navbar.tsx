@@ -1,3 +1,5 @@
+import React from "react";
+
 interface menuType {
   title: string;
   href: string;
@@ -10,7 +12,7 @@ const navMenu: menuType[] = [
   { title: "Contact", href: "#contact" },
 ];
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   return (
     <nav className="flex items-center gap-4 dark:text-[#858585]">
       {navMenu.map((menu: menuType) => (
